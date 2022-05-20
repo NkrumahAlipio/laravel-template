@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Session;
 Route::get('mudar-idioma/{idioma}', function ($idioma) {
     Session::put('idioma', $idioma);
     return back();
-});
+})->name('mudar-idioma');
 
 Route::get('/', function () {
     return view('welcome');
